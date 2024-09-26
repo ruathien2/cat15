@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./conrtent";
+
+:root {
+    --toastify-color-primary: rgb(46, 186, 193);
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-wrap {
+    height: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form-layout {
+    @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 mb-5 lg:mb-10;
+}
+
+.quill {
+    position: relative;
+
+    .ql-toolbar {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+.ql-align-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ql-align-right {
+    text-align: end;
+}
+
+.errors-validation {
+    color: red;
+    font-size: 12px;
+}
+
